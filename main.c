@@ -154,7 +154,7 @@
                 case 1:
                     // Aggiungi film
                     // Se vuoi usare realloc, serve assegnare il ritorno a films
-                    realloc(films, sizeof(Film) * (index + 1));
+                    films = realloc(films, sizeof(Film) * (index + 1));
                     if (!films) {
                         printf("Errore allocazione memoria!\n");
                         exit(1);
